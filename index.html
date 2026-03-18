@@ -19,6 +19,7 @@
         <ul class="nav-menu">
           <li><a href="#home" class="nav-link">Home</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#certifications" class="nav-link">Certifications</a></li>
           <li><a href="#publications" class="nav-link">Publications</a></li>
@@ -38,12 +39,11 @@
         <div class="hero-content">
           <div class="hero-tag">Available for Opportunities</div>
           <h1 class="hero-name">Lokesh J</h1>
-          <p class="hero-title">Data Engineering & DevOps Enthusiast | Backend & ETL Development</p>
+          <p class="hero-title">Software Engineer | Backend Architecture & Security Automation</p>
           <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka, India</p>
           <p class="hero-intro">
-            B.Tech Computer Science student with practical experience in scalable data systems,
-            ETL pipelines, and machine learning. Skilled in Python, SQL, and DevOps.
-            Passionate about building production-grade backend solutions.
+            B.Tech Computer Science student and incoming Full-Time SOC Analyst with practical experience in scalable data systems,
+            security automation, and cloud DevOps. Passionate about building production-grade backend solutions.
           </p>
           <div class="hero-buttons">
             <a href="https://github.com/lokeshj2403" target="_blank" class="btn btn-primary">
@@ -66,11 +66,11 @@
                 <span class="stat-label">Repositories</span>
               </div>
               <div class="stat">
-                <span class="stat-number">8.79</span>
+                <span class="stat-number">8.87</span>
                 <span class="stat-label">CGPA</span>
               </div>
               <div class="stat">
-                <span class="stat-number">2+</span>
+                <span class="stat-number">3+</span>
                 <span class="stat-label">Publications</span>
               </div>
             </div>
@@ -96,7 +96,7 @@
               With expertise spanning ETL pipeline development, cloud infrastructure, and backend systems,
               I specialize in creating production-grade applications that solve real-world problems. My work
               combines technical precision with creative problem-solving, whether it's optimizing data workflows,
-              implementing CI/CD pipelines, or developing machine learning models.
+              implementing CI/CD pipelines, or developing security automation.
             </p>
             <div class="about-objective">
               <h3>Career Objective</h3>
@@ -114,7 +114,33 @@
       </div>
     </section>
 
-    <section id="projects" class="section section-dark">
+   <section id="experience" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="education-timeline">
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="education-content" style="width: 100%;">
+              <h3>SOC Analyst Intern </h3>
+              <p class="education-institution">Halma plc, Bengaluru</p>
+              <div class="education-details">
+                <span class="education-duration"><i class="fas fa-calendar"></i> Sept 2025 - Present</span>
+              </div>
+              <ul style="margin-top: 1.5rem; color: var(--text-secondary); line-height: 1.8; list-style-position: inside;">
+                <li>Assisted the SOC team by analyzing and triaging P1, P2, and P3 security incidents, including extensive phishing email investigations.</li>
+                <li>Leveraged a comprehensive enterprise security stack including Abnormal AI, Cato, WithSecure, CrowdStrike, and Microsoft Defender for threat detection and response.</li>
+                <li>Created and managed device groups and security policies utilizing Microsoft Intune and Azure (Microsoft Entra ID).</li>
+                <li>Administered security awareness protocols and patch management workflows using KnowBe4 and Automox.</li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="section">
       <div class="container">
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
@@ -128,18 +154,42 @@
             <div class="project-content">
               <h3>Worldcoin ETL Pipeline</h3>
               <p>
-                A robust, containerized ETL pipeline for processing and analyzing Worldcoin market data
-                using time-series analysis. Implements data extraction, transformation, and loading with
-                automated scheduling and monitoring.
+                Architected a fault-tolerant ETL system processing 10,000+ daily records with 99.9% uptime using Binance API. 
+                Optimized backend query performance by 25% through strategic schema normalization and database indexing.
               </p>
               <div class="project-tech">
                 <span class="tech-tag">Python</span>
+                <span class="tech-tag">MySQL</span>
                 <span class="tech-tag">Docker</span>
-                <span class="tech-tag">ETL</span>
                 <span class="tech-tag">Time-Series</span>
               </div>
               <div class="project-buttons">
-                <a href="https://github.com/lokeshj2403/ETL-Pipeline" target="_blank" class="btn btn-small">
+                <a href="https://github.com/lokeshj2403/ETL-Pipeline" target="_blank" class="btn btn-small btn-secondary">
+                  <i class="fab fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Task Dependency Management System</h3>
+              <p>
+                Developed a task management engine supporting complex Directed Acyclic Graph (DAG) dependencies. 
+                Implemented a Circular Dependency Prevention algorithm that detects cycles during ingestion and returns the exact path.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Django REST</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <div class="project-buttons">
+                <a href="https://github.com/lokeshj2403" target="_blank" class="btn btn-small btn-secondary">
                   <i class="fab fa-github"></i> View Code
                 </a>
               </div>
@@ -155,19 +205,17 @@
             <div class="project-content">
               <h3>Pillow Mart Ecommerce Platform</h3>
               <p>
-                Full-stack ecommerce platform with complete CI/CD pipeline implementation. Features include
-                Docker containerization, automated testing, AWS deployment, and Jenkins integration for
-                continuous delivery.
+                Built a scalable backend with GitHub Actions CI/CD, decreasing production deployment time by 50%. 
+                Integrated secure JWT authentication and designed RESTful APIs to handle concurrent user transactions.
               </p>
               <div class="project-tech">
                 <span class="tech-tag">Node.js</span>
                 <span class="tech-tag">Docker</span>
                 <span class="tech-tag">AWS</span>
-                <span class="tech-tag">Jenkins</span>
                 <span class="tech-tag">CI/CD</span>
               </div>
               <div class="project-buttons">
-                <a href="https://github.com/lokeshj2403/Pillowmart" target="_blank" class="btn btn-small">
+                <a href="https://github.com/lokeshj2403/Pillowmart" target="_blank" class="btn btn-small btn-secondary">
                   <i class="fab fa-github"></i> View Code
                 </a>
               </div>
@@ -184,8 +232,7 @@
               <h3>Malware Classification Using Deep Learning</h3>
               <p>
                 Advanced machine learning system for malware detection and classification using deep neural
-                networks and SHAP values for interpretability. Achieved high accuracy in identifying malicious
-                software patterns across multiple malware families.
+                networks and SHAP values for interpretability. Achieved high accuracy in identifying malicious software patterns.
               </p>
               <div class="project-tech">
                 <span class="tech-tag">Python</span>
@@ -194,84 +241,7 @@
                 <span class="tech-tag">SHAP</span>
               </div>
               <div class="project-buttons">
-                <a href="https://github.com/lokeshj2403/Malware-Classification_Using_DL" target="_blank" class="btn btn-small">
-                  <i class="fab fa-github"></i> View Code
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-overlay">
-                <i class="fas fa-tasks"></i>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>Task Manager API</h3>
-              <p>
-                RESTful API for task management with authentication, CRUD operations, and data persistence.
-                Implements best practices for API design, security, and scalability.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">Express</span>
-                <span class="tech-tag">REST API</span>
-              </div>
-              <div class="project-buttons">
-                <a href="https://github.com/lokeshj2403/task-manger-api" target="_blank" class="btn btn-small">
-                  <i class="fab fa-github"></i> View Code
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-overlay">
-                <i class="fas fa-server"></i>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>DevOps Infrastructure Project</h3>
-              <p>
-                Comprehensive DevOps project demonstrating infrastructure as code, containerization,
-                and automated deployment pipelines. Includes monitoring, logging, and scaling strategies.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Docker</span>
-                <span class="tech-tag">DevOps</span>
-                <span class="tech-tag">CI/CD</span>
-              </div>
-              <div class="project-buttons">
-                <a href="https://github.com/lokeshj2403/DevOps" target="_blank" class="btn btn-small">
-                  <i class="fab fa-github"></i> View Code
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-overlay">
-                <i class="fas fa-link"></i>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>Clearence Connect</h3>
-              <p>
-                Web application for streamlining clearance processes with real-time updates and notifications.
-                Features user authentication, role-based access control, and responsive design.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Web Development</span>
-                <span class="tech-tag">Full Stack</span>
-              </div>
-              <div class="project-buttons">
-                <a href="https://github.com/lokeshj2403/ClearenceConnect" target="_blank" class="btn btn-small">
+                <a href="https://github.com/lokeshj2403/Malware-Classification_Using_DL" target="_blank" class="btn btn-small btn-secondary">
                   <i class="fab fa-github"></i> View Code
                 </a>
               </div>
@@ -282,16 +252,31 @@
       </div>
     </section>
 
-    <section id="certifications" class="section">
+    <section id="certifications" class="section section-dark">
       <div class="container">
         <h2 class="section-title">Certifications</h2>
         <div class="certifications-grid">
 
           <div class="certification-card">
             <div class="cert-icon">
+              <i class="fab fa-microsoft"></i>
+            </div>
+            <h3>Azure Fundamentals (AZ-900)</h3>
+            <p class="cert-issuer">Microsoft</p>
+            <div class="cert-badge">Verified (March 2026)</div>
+            <div style="margin-top: 1rem;">
+              <a href="https://learn.microsoft.com/en-us/users/lokeshj-2403/credentials/certification/azure-fundamentals" target="_blank" class="btn btn-small btn-secondary">
+                <i class="fas fa-check-circle"></i> Verify
+              </a>
+            </div>
+          </div>
+
+        
+          <div class="certification-card">
+            <div class="cert-icon">
               <i class="fab fa-aws"></i>
             </div>
-            <h3>AWS Project</h3>
+            <h3>AWS Infrastructure Specialization</h3>
             <p class="cert-issuer">Great Learning Academy</p>
             <div class="cert-badge">Completed</div>
           </div>
@@ -300,18 +285,9 @@
             <div class="cert-icon">
               <i class="fas fa-infinity"></i>
             </div>
-            <h3>DevOps</h3>
+            <h3>Professional DevOps Practitioner</h3>
             <p class="cert-issuer">Great Learning Academy</p>
             <div class="cert-badge">Completed</div>
-          </div>
-
-          <div class="certification-card">
-            <div class="cert-icon">
-              <i class="fas fa-network-wired"></i>
-            </div>
-            <h3>Introduction to Internet of Things</h3>
-            <p class="cert-issuer">NPTEL</p>
-            <div class="cert-score">Score: 87%</div>
           </div>
 
           <div class="certification-card">
@@ -321,22 +297,8 @@
             <h3>Defend Against Cyberthreats with Microsoft Defender XDR</h3>
             <p class="cert-issuer">Microsoft Applied Skills</p>
             <div class="cert-badge">Verified</div>
-            <div>
+            <div style="margin-top: 1rem;">
               <a href="https://learn.microsoft.com/en-us/users/lokeshj-1102/credentials/applied-skill/defend-against-cyberthreats-with-microsoft-defender-xdr" target="_blank" class="btn btn-small btn-secondary">
-                <i class="fas fa-check-circle"></i> Verify
-              </a>
-            </div>
-          </div>
-
-          <div class="certification-card">
-            <div class="cert-icon">
-              <i class="fab fa-linkedin"></i>
-            </div>
-            <h3>Cybersecurity Certificate</h3>
-            <p class="cert-issuer">LinkedIn Learning</p>
-            <div class="cert-badge">Completed</div>
-            <div>
-              <a href="https://www.linkedin.com/learning/certificates/ad7c25f6a0d2313ef0f17160b94083dd98116718d4b9ee5195ef707e56acfab9?u=92097634" target="_blank" class="btn btn-small btn-secondary">
                 <i class="fas fa-check-circle"></i> Verify
               </a>
             </div>
@@ -346,10 +308,27 @@
       </div>
     </section>
 
-    <section id="publications" class="section section-dark">
+    <section id="publications" class="section">
       <div class="container">
         <h2 class="section-title">Publications</h2>
         <div class="publications-list">
+
+          <div class="publication-card">
+            <div class="publication-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="publication-content">
+              <h3>SHAP Based Feature Selection for Efficient Malware Classification</h3>
+              <p class="publication-venue">2nd IEEE International Conference (IC3ECSBHI-2026)</p>
+              <p class="publication-description">
+                <strong>Oral Presenter:</strong> Research focusing on interpretability using SHAP values and achieving high accuracy across multiple malware families. Presented at Gautam Buddha University.
+              </p>
+              <div class="publication-meta">
+                <span class="publication-year"><i class="fas fa-calendar"></i> Feb 2026</span>
+                <span class="publication-status">Published</span>
+              </div>
+            </div>
+          </div>
 
           <div class="publication-card">
             <div class="publication-icon">
@@ -357,13 +336,12 @@
             </div>
             <div class="publication-content">
               <h3>Malware Classification Using Deep Learning</h3>
-              <p class="publication-venue">IEEE - ETCC 2025</p>
+              <p class="publication-venue">Intl. Conference on Emerging Technologies (ETCC), IEEE</p>
               <p class="publication-description">
-                Research on advanced deep learning techniques for malware detection and classification,
-                focusing on interpretability using SHAP values and achieving high accuracy across multiple malware families.
+                Research on advanced deep learning techniques for malware detection and classification.
               </p>
               <div class="publication-meta">
-                <span class="publication-year"><i class="fas fa-calendar"></i> 2025</span>
+                <span class="publication-year"><i class="fas fa-calendar"></i> Mar 2025</span>
                 <span class="publication-status">Published</span>
               </div>
               <div style="margin-top: 1.5rem;">
@@ -379,21 +357,20 @@
               <i class="fas fa-file-alt"></i>
             </div>
             <div class="publication-content">
-              <h3>Worldcoin Market Analysis Using ETL Pipeline and Time-Series Data</h3>
-              <p class="publication-venue">IC3IT Conference</p>
+              <h3>Worldcoin Market Analysis Using ETL Pipelines</h3>
+              <p class="publication-venue">IC3IT Conference, IEEE</p>
               <p class="publication-description">
                 Comprehensive analysis of cryptocurrency market data using custom ETL pipeline and time-series
                 forecasting models to predict market trends and patterns in Worldcoin trading.
               </p>
               <div class="publication-meta">
-                <span class="publication-year"><i class="fas fa-calendar"></i> 2025</span>
-                <span class="publication-status status">Published</span>
-                </div>
+                <span class="publication-year"><i class="fas fa-calendar"></i> Jan 2026</span>
+                <span class="publication-status">Published</span>
+              </div>
               <div style="margin-top: 1.5rem;">
                 <a href="https://ieeexplore.ieee.org/document/11341141" target="_blank" class="btn btn-small btn-secondary">
                   <i class="fas fa-external-link-alt"></i> View Paper
                 </a>
-              </div>
               </div>
             </div>
           </div>
@@ -402,7 +379,7 @@
       </div>
     </section>
 
-    <section id="education" class="section">
+    <section id="education" class="section section-dark">
       <div class="container">
         <h2 class="section-title">Education</h2>
         <div class="education-timeline">
@@ -414,8 +391,8 @@
               <h3>Bachelor of Technology in Computer Science & Technology</h3>
               <p class="education-institution">Dayananda Sagar University, Bengaluru</p>
               <div class="education-details">
-                <span class="education-cgpa"><i class="fas fa-star"></i> CGPA: 8.79</span>
-                <span class="education-duration"><i class="fas fa-calendar"></i> Dec 2022 - Present</span>
+                <span class="education-cgpa"><i class="fas fa-star"></i> CGPA: 8.87</span>
+                <span class="education-duration"><i class="fas fa-calendar"></i> Dec 2022 - June 2026</span>
               </div>
             </div>
           </div>
@@ -423,7 +400,7 @@
       </div>
     </section>
 
-    <section id="skills" class="section section-dark">
+    <section id="skills" class="section">
       <div class="container">
         <h2 class="section-title">Technical Skills</h2>
         <div class="skills-container">
@@ -437,7 +414,7 @@
               </div>
               <div class="skill-item">
                 <i class="fab fa-java"></i>
-                <span>Java</span>
+                <span>Java (OOP)</span>
               </div>
               <div class="skill-item">
                 <i class="fas fa-database"></i>
@@ -447,45 +424,15 @@
           </div>
 
           <div class="skill-category">
-            <h3><i class="fas fa-globe"></i> Web Development & Databases</h3>
+            <h3><i class="fas fa-globe"></i> Web & Cloud Engineering</h3>
             <div class="skills-grid">
               <div class="skill-item">
-                <i class="fab fa-html5"></i>
-                <span>HTML</span>
+                <i class="fab fa-react"></i>
+                <span>React / Node.js</span>
               </div>
-              <div class="skill-item">
-                <i class="fab fa-css3-alt"></i>
-                <span>CSS</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-js"></i>
-                <span>JavaScript</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-node-js"></i>
-                <span>Node.js</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <span>MySQL</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
-            <div class="skills-grid">
               <div class="skill-item">
                 <i class="fab fa-aws"></i>
-                <span>AWS EC2</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-git-alt"></i>
-                <span>Git</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-github"></i>
-                <span>GitHub</span>
+                <span>AWS (EC2, S3)</span>
               </div>
               <div class="skill-item">
                 <i class="fab fa-docker"></i>
@@ -493,59 +440,47 @@
               </div>
               <div class="skill-item">
                 <i class="fab fa-jenkins"></i>
-                <span>Jenkins</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-sync-alt"></i>
-                <span>GitHub Actions</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-infinity"></i>
-                <span>CI/CD</span>
+                <span>Jenkins / CI/CD</span>
               </div>
             </div>
           </div>
 
           <div class="skill-category">
-            <h3><i class="fas fa-cogs"></i> ETL & System Design</h3>
+            <h3><i class="fas fa-shield-alt"></i> Security Automation</h3>
             <div class="skills-grid">
               <div class="skill-item">
+                <i class="fab fa-microsoft"></i>
+                <span>Azure Logic Apps</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-id-badge"></i>
+                <span>Entra ID</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Microsoft Intune</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-shield-virus"></i>
+                <span>Defender for Cloud</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="fas fa-cogs"></i> System Design & Theory</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fas fa-network-wired"></i>
+                <span>Graph Theory (DAGs)</span>
+              </div>
+              <div class="skill-item">
                 <i class="fas fa-exchange-alt"></i>
-                <span>ETL Development</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-broom"></i>
-                <span>Data Cleaning</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-box"></i>
-                <span>Containerization</span>
+                <span>REST APIs / ETL</span>
               </div>
               <div class="skill-item">
                 <i class="fas fa-project-diagram"></i>
-                <span>System Design</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3><i class="fas fa-lightbulb"></i> Professional Skills</h3>
-            <div class="skills-grid">
-              <div class="skill-item">
-                <i class="fas fa-file-alt"></i>
-                <span>Technical Documentation</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-puzzle-piece"></i>
-                <span>Problem Solving</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-chart-line"></i>
-                <span>Analytical Thinking</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-users"></i>
-                <span>Teamwork</span>
+                <span>Data Structures</span>
               </div>
             </div>
           </div>
@@ -554,7 +489,7 @@
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section section-dark">
       <div class="container">
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-content">
@@ -562,7 +497,7 @@
             <h3>Let's Connect</h3>
             <p>
               I'm always open to discussing new opportunities, collaborations, or just having a
-              conversation about technology and innovation. Feel free to reach out!
+              conversation about backend engineering and security. Feel free to reach out!
             </p>
             <div class="contact-methods">
               <a href="mailto:lokesh.j@zohomail.in" class="contact-method">
@@ -572,6 +507,7 @@
                   <p>lokesh.j@zohomail.in</p>
                 </div>
               </a>
+             
               <a href="https://github.com/lokeshj2403" target="_blank" class="contact-method">
                 <i class="fab fa-github"></i>
                 <div>
@@ -614,7 +550,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <p>&copy; 2025 Lokesh J. All rights reserved.</p>
+          <p>&copy; 2026 Lokesh J. All rights reserved.</p>
           <div class="footer-links">
             <a href="https://github.com/lokeshj2403" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/lokeshj2403/" target="_blank"><i class="fab fa-linkedin"></i></a>
